@@ -5,6 +5,8 @@
 */
 
 function isFishHere(fishes, fishToFind) {
+    console.log(`Buscamos a ${fishToFind} en ${fishes}`)
+    return fishes.includes(fishToFind);
 }
 
 // Conjunto de pruebas para isFishHere

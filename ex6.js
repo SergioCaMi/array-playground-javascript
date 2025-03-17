@@ -18,7 +18,7 @@ let pezBuscado = "Estrella";
 let pezEncontrado = false;
 let i = 0;
 
-while (!pezEncontrado && i < listaPeces.length - 1) {
+while (!pezEncontrado && i <= listaPeces.length - 1) { //<= o eliminamos el -1
   if (listaPeces[i] == pezBuscado) {
     pezEncontrado = true;
   }

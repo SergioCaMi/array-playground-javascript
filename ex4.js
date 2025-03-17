@@ -17,4 +17,4 @@
   let pezPosicion2 = muchos_peces.indexOf("estrella")
   console.log("Estrella está en la posición: " + pezPosicion2)
 
-  
+  console.log("No la encuentra, ya que Estrella tiene la primera mayúscula y estrella no lo tiene. Devuelve un número negativo, que indica que no hay coincidencias.")

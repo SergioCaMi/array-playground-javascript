@@ -5,12 +5,19 @@
  * Dado un array de caramelos representados como emojis 🍬, devuelve true si hay al menos 
  * tres seguidos del mismo tipo, o false si no los hay.
  */
-
 function hasThreeInARow(candies) {
-    // RECUERDA: PRIMERO escribe lo que hay que hacer con tus palabras. Luego, viene el código
-
-}
-
+    for (x=0; x<candies.length;x++){
+        if (!(candies[x-1]==undefined) && !(candies[x+1] == null)){
+            if ((candies[x]==candies[x-1])&&(candies[x]==candies[x+1])){
+                console.log(candies[x] + candies[x-1] + candies[x+1])
+                return true;
+            }
+        }
+    }
+    return false;
+    }
+        
+    
 // Ejemplo de uso:
 console.log(hasThreeInARow(["🍬", "🍬", "🍬", "🍫", "🍭"])); // true -> Tres 🍬 seguidos
 console.log(hasThreeInARow(["🍫", "🍬", "🍭", "🍭", "🍭"])); // true -> Tres 🍭 seguidos

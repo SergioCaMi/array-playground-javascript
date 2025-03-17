@@ -6,7 +6,13 @@
  */
 
 function countSixes(rolls) {
-    // RECUERDA: PRIMERO escribe lo que hay que hacer con tus palabras. Luego, viene el código
+    let cuentaSeises=0;
+    for (roll of rolls){
+        if (parseInt(roll)==6){
+            cuentaSeises++;
+        }
+    }
+   return cuentaSeises;
 }
 
 // Ejemplo de uso:
